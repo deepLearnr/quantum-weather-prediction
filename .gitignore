@@ -1,0 +1,17 @@
+# Virtual environment
+.venv-qweather/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Packaging/build artifacts
+*.egg-info/
+build/
+dist/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment/secrets
+.env

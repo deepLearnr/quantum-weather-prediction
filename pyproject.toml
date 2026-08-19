@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-qml"
+version = "0.1.0"
+description = "Hybrid Quantum-Classical Neural Networks for Regional Weather & Climate Simulation"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+authors = [
+    { name = "Developer" }
+]
+license = { text = "MIT" }
+
+dependencies = [
+    # Core Math & Data Ingestion (Layer 1)
+    "numpy>=1.26.4,<2.0.0",
+    "pandas>=2.2.0,<2.3.0",
+    "requests>=2.31.0,<3.0.0",
+    "pydantic>=2.6.0,<3.0.0",
+    "pyyaml>=6.0.1,<7.0.0",
+
+    # Classical ML & Preprocessing (Layer 2 & 4)
+    "scikit-learn>=1.4.0,<1.6.0",
+    "torch>=2.3.0,<2.4.0",
+
+    # Quantum Machine Learning Stack (Layer 3 & 4)
+    "qiskit>=1.0.2,<2.0.0",
+    "qiskit-machine-learning>=0.7.2,<0.9.0",
+    "qiskit-aer>=0.13.3,<0.16.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
