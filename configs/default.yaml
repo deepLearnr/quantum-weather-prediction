@@ -1,0 +1,9 @@
+# configs/default.yaml
+compute:
+  target: "local_aer"  # Options: local_aer, cloud_gpu, ibm_qpu
+  shots: 1000
+
+  # Configurations specific to hardware execution
+  ibm_quantum:
+    backend_name: "ibm_brisbane"
+    # Token should be injected via environment variable, not hardcoded here
